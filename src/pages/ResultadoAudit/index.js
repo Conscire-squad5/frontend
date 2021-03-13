@@ -16,7 +16,7 @@ function ResultadoAudit() {
     window.onload = ()=>{
         const emailsession = localStorage.getItem('email')
         console.log(emailsession)
-        Axios.post("https://conscire-api.herokuapp.com/audit/retorna",{
+        Axios.post("https://conscirebackend.herokuapp.com/audit/retorna",{
             email: emailsession,
         }).then((Response)=> {
             console.log(Response.data)
